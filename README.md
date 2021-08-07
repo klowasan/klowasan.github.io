@@ -1,209 +1,102 @@
-# Neumorphism <!-- omit in toc -->
+<h1><a href="https://github.com/ItsMeaga1n/minimal-categorized/"><img src="https://raw.githubusercontent.com/ItsMeaga1n/minimal-categorized/master/assets/img/favicon.ico" height="21" alt="minimal-categorized logo" /> minimal-categorized Jekyll theme </h1></a>
 
-> Neumorphism designed Jekyll theme for personal websites, portfolios and resumes.
-
-* Featured on [JAMstack Themes](https://jamstackthemes.dev/theme/jekyll-neumorphism/)
-* Featured on [Jekyll Themes](https://jekyll-themes.com/neumorphism/)
-* Featured on [jekyllthemes](http://jekyllthemes.org/themes/neumorphism/)
-
-[![Open Issues](https://badgen.net/github/open-issues/longpdo/neumorphism)](https://github.com/longpdo/neumorphism/issues)
-[![License](https://badgen.net/github/license/longpdo/neumorphism)](LICENSE)
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
+[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.9-blue.svg)](https://jekyllrb.com/)
+[![Gem Version](https://badge.fury.io/rb/minimal-categorized.svg)](https://badge.fury.io/rb/minimal-categorized)
+<a href="https://ko-fi.com/itsmeaga1n">
+  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
+    alt="Donate (Ko-fi)" />
+</a>
 <a href="https://jekyll-themes.com">
-    <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
+    <img src="https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg" height="20" alt="Jekyll Themes Shield" />
 </a>
 
-[View Demo](https://longpdo.github.io/neumorphism/) · [Report Bug](https://github.com/longpdo/neumorphism/issues) · [Request Feature](https://github.com/longpdo/neumorphism/issues)
+minimal-categorized is a flexible Jekyll theme, designed for sites with content easily aggregated into two categories. It's main focus is on separating two main categories, while maintaining minimal style and full customization. Demo is available [here](https://itsmeaga1n.github.io/minimal-categorized/).
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents <!-- omit in toc -->
+![layout examples](screenshot.png)
 
-* [About The Project](#about-the-project)
-  * [Built With](#built-with)
-  * [Features](#features)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-  * [Personalize and Customize](#personalize-and-customize)
-    * [_config.yml](#_configyml)
-    * [Github Metadata Plugin](#github-metadata-plugin)
-    * [_data/*.yml](#_datayml)
-    * [Particles.js](#particlesjs)
-* [Contributing](#contributing)
-* [License](#license)
-* [Acknowledgements](#acknowledgements)
+## Installation
+There are three ways to install:
 
-<!-- ABOUT THE PROJECT -->
+* As a ruby gem theme:
 
-## About The Project
+    Add this line to your Jekyll site's `Gemfile`:
 
-[![Project Screenshot][product-screenshot]](https://longpdo.github.io/neumorphism/)
+    ```ruby
+    gem "minimal-categorized"
+    ```
 
-This is a personal website built with `Jekyll` and hosted on `Github Pages`, which is based on the new `Neumorphism` design trend and was developed with a mobile-first approach. This can be used by developers, who want to showcase their resume and portfolio. If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
+    And add this line to your Jekyll site's `_config.yml`:
 
-### Built With
+    ```yaml
+    theme: minimal-categorized
+    ```
 
-* [Jekyll](https://jekyllrb.com/)
+    And then execute:
 
-### Features
+        $ bundle
 
-* Mobile-First Responsive Design
-* Animated preloader animation
-* Landing Page with animated background with [particles.js](https://vincentgarreau.com/particles.js/), a Typing Carousel and animated social icons
-* Dark Neumorphism Design on main content
-* [Animations On Scroll](https://michalsnik.github.io/aos/)
-* Filterable *Skills* word cloud
-* [Github's API](https://developer.github.com/v3/) automatically populating the *Open Source Projects* section
-* Gulp dev workflow with [BrowserSync](https://browsersync.io/), [Autoprefixer](https://autoprefixer.github.io/) and `JS` & `SCSS` minifying.
-* [Google Analytics](https://analytics.google.com/)
+    Or install it yourself as:
 
-<!-- GETTING STARTED -->
+        $ gem install minimal-categorized
 
-## Getting Started
+* As a remote theme (GitHub Pages compatible)
+    
+    In your Jekyll site's _config.yml remove other themes and add this entry:
+    ```
+    remote_theme: ItsMeaga1n/minimal-categorized
+    ```
 
-To get a local copy up and running follow these simple steps.
-
-`The commands and instructions I provide are for MacOS - please look up the specific commands for your OS on your own.`
-
-### Prerequisites
-
-* [NodeJS](https://nodejs.org/en/)
-
-```sh
-brew install node
-```
-
-If you need to switch between Node versions regurlarly, I would recommend to install Node via [Node Version Manager](https://github.com/nvm-sh/nvm/blob/master/README.md#manual-install).
-
-* [Jekyll](https://jekyllrb.com/)
-
-```sh
-gem install bundler jekyll
-```
-
-For more information, refer to [this](https://jekyllrb.com/docs/installation/).
-
-* [Yarn](https://yarnpkg.com/)
-
-```sh
-npm install -g yarn
-```
-
-### Installation
-
-> Recommended way: If you want to contribute to this theme or open issues due to problems implementing this on your own, I would recommend forking the repository directly. This makes it easier for me to solve open issues and questions or check pull requests.
-
-1.1: Fork the repository (using the `Fork` button at the top) and then clone the repository
-
-```sh
-# Replace {YOUR_USERNAME} with your actual username
-git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
-```
-
-or
-
-1.2: Create your own repository (using the green `Use this template` button at the top) and then clone the repository
-
-```sh
-# Replace {YOUR_USERNAME}, {YOUR_REPOSITORY} with the actual values
-git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}.git
-```
-
-2: Change directory into neumorphism
-
-```sh
-cd neumorphism
-```
-
-3: Install dependencies
-
-```sh
-yarn
-```
-
-<!-- USAGE EXAMPLES -->
-
+* Forking/directly copying all of the theme files into your project.
 ## Usage
 
-* Run and develop locally with live server at `http://localhost:4000`, this will also build production-ready `JS` and `SCSS` assets with every change
+This theme is based on separating content into categories, which is later shown on separated sites designated to the specific content type.
 
-```sh
-gulp
-```
+As for now, theme allows to use two main categories that will be displayed on home screen and more categories displayed only in menu to further separate content. Those are defined in `_data/menu.yml`.
 
-* After committing and pushing, see the `Settings` page of your repository to see where your site is published at via `Github Pages`.
+Structure of `_data/menu.yml`:
+* menu_title: Displayed on menu (only for normal menu)
+* menu_headline: Displayed in menu (only for normal menu) and in about page
+* menu_intro: Displayed in menu (only for normal menu) and in about page
+* show_menu_on_gate_page: Boolean value determining if menu should be visible on category selection page
+* minimal_menu: Boolean value determining the style of menu bar
+* menu_logo: Path to logo displayed on menu (only for normal menu)
+* menu_pages: a list of items in menu. Each item contains information:
+    * title: Menu position title
+    * url: URL for href
+    * show_on_home: Boolean value to determine if this position is a category to be shown on category picker
+    * image_url: image URL for category picker
+    * icon_name: FavIcon to be displayed in menu
+    * category: unique identifier of category. Used to determine which menu item is selected
+    * tooltip: Tooltip for menu item
+* menu_contacts: a list of items to be displayed for a contact section in menu
+    * faicon: FavIcon to be displayed in menu
+    * url: URL for href
+    * target: target value of \<a> tag
 
-### Personalize and Customize
 
-#### _config.yml
-
-Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/longpdo/neumorphism/blob/master/docs/config.md).
-
-#### Github Metadata Plugin
-
-If you want to automatically have your Github repositories pulled for the *Open Source Projects* section, then you also need to authenticate yourself for the Github Metadata plugin to work.
-
-You need to generate a new personal access token on GitHub:
-
-* Go to the [Github Token site](https://github.com/settings/tokens/new)
-* Select the scope `public_repository`, and add a description.
-* Confirm and save the settings. Copy the token you see on the page.
-* Create a `.env` file inside your repository and add your generated `JEKYLL_GITHUB_TOKEN`:
-
-```text
-JEKYLL_GITHUB_TOKEN=0YOUR0GENERATED0TOKEN0
-```
-
-To complete the configuration for the Github Metadata plugin, you also need to change the value of `repository` inside `_config.yml`. After this, you should the Github Metadata plugin should work properly.
-
-For optimal results, you should make sure, that every Github project, you want included on this portfolio, has added following informations on Github:
-
-* Description
-* Homepage link, if there is a live version of it
-* Topics
-
-Example:
-![Github Repository Information Example][github-repo-info]
-
-#### _data/*.yml
-
-Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
-
-#### Particles.js
-
-Edit `assets/particles.json` to customize the landing page backgorund animation. For more information, refer to [this](https://github.com/VincentGarreau/particles.js/#options).
-
-<!-- CONTRIBUTING -->
-
+Structure of `_data/metaData.yml`:
+* author: Site Author name
+* avatar_url: URL for avatar (for about page)
+* lightTheme: Will work in future releases
+* cookies: customize information about site cookies
+    * enabled: determine if should show cookies pop-up
+    * message: text on cookie pop-up
+    * agreeButtonText: text on agree button
+* show_menu_logo_on_home_page: boolean value determining, if should display logo from "menu_logo" entry in default home page layout
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Bug reports and pull requests are welcome on [GitHub](https://github.com/ItsMeaga1n/minimal-categorized). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Development
 
-<!-- LICENSE -->
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `minimal-categorized.gemspec` accordingly.
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
-* [Font Awesome](https://fontawesome.com/)
-* [Normalize.css](https://necolas.github.io/normalize.css/)
-* Based Preloader on [Codrin Pavel's](https://codepen.io/zerospree/pen/aCjAz) version
-* Typing Carousel by [Gregory Schier](https://codepen.io/gschier/pen/jkivt)
-* Social Button Animation by [Stéphane Lyver](https://codepen.io/wouwi/pen/Lwrmi)
-* Adapted [Damian Jankowski's](https://codepen.io/dolaron/pen/rNadmOE) color palette for the neumorphism design
-* Based Timeline on [Krishna Babu's](https://codepen.io/krishnab/pen/OPwqbW) version
-
-<!-- MARKDOWN LINKS & IMAGES -->
-
-[product-screenshot]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/screenshot.gif
-[github-repo-info]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/github-repo-info.png
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

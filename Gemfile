@@ -1,6 +1,8 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "dotenv"
-gem "github-pages"
-gem "jekyll"
-gem "jekyll-github-metadata"
+source "https://rubygems.org"
+gemspec
+gem "kramdown-parser-gfm"
+gem "kramdown-syntax-coderay"
+#seo
+gem "jekyll-seo-tag", github: "jekyll/jekyll-seo-tag"
